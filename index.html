@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Subway Surfers Mini Game</title>
+  <style>
+    #game-board {
+      position: relative;
+      width: 400px;
+      height: 600px;
+      border: 1px solid black;
+      overflow: hidden;
+    }
+
+    #player {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
 </head>
 <body>
-    
+  <div id="game-board">
+    <div id="player"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
